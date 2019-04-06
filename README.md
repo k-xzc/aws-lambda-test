@@ -1,9 +1,9 @@
 # aws-lambda-test
 
 ## requirement ##
-aws cli
+- aws cli
 
-terraform
+- terraform
 
 ## How to run ##
 
@@ -18,7 +18,8 @@ zip main.js example.zip
 
 aws s3 cp example.zip s3://---youbucket-name---/v1.0.0/example.zip
 
-aws s3api create-bucket --bucket=---youbucket-name--- --region=---your region--- --create-bucket-configuration LocationConstraint=---your region---
+aws s3api create-bucket --bucket=---youbucket-name--- --region=---your region--- --create-bucket-configuration 
+  LocationConstraint=---your region---
 
 export AWS_ACCESS_KEY_ID="---your accesskey---"
 export AWS_SECRET_ACCESS_KEY="---your secretkey---"
