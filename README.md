@@ -1,7 +1,12 @@
 # aws-lambda-test
-zip main.js example.zip
+
+How to run 
 
 aws configure
+
+terraform init
+
+zip main.js example.zip
 
 aws s3 cp example.zip s3://---youbucket-name---/v1.0.0/example.zip
 
@@ -15,7 +20,7 @@ terraform apply -var="app_version=1.0.0"
 
 aws lambda invoke --region=---your region--- --function-name=---function-name--- output.txt
 
-powershell Compress-Archive app example.zip
+zip Compress-Archive app example.zip
 aws s3 cp example.zip s3://kant-lambda/v1.0.1/example.zip
 terraform apply -var="app_version=1.0.1"
 
