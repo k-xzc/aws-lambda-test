@@ -1,8 +1,15 @@
 # aws-lambda-test
 
-How to run 
+## requirement ##
+aws cli
+terraform
+
+## How to run ##
 
 aws configure
+  AWS Access Key ID : ---your accesskey---
+  AWS Secret Access Key : ---your secretkey---
+  Default region name= ---your region---
 
 terraform init
 
@@ -23,4 +30,3 @@ aws lambda invoke --region=---your region--- --function-name=---function-name---
 zip Compress-Archive app example.zip
 aws s3 cp example.zip s3://kant-lambda/v1.0.1/example.zip
 terraform apply -var="app_version=1.0.1"
-
